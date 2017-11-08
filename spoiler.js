@@ -20,19 +20,6 @@ var createButton = function(element) {
   hideElement(element)
 };
 
-//on ajoute l'ecouteur chargement de document
-document.addEventListener("DOMContentLoaded", function() {
-  //on selectionnes tt span ont la class=.spoiler
-  var spoilers = document.querySelectorAll(".spoiler");
-  for (var i = 0; i < spoilers.length; i++) {
-    createButton(spoilers[i]);
-   
-  }
-
-
-
-
-
 
 //cache un element 
 var hideElement=function (element){
@@ -40,15 +27,28 @@ var hideElement=function (element){
 }
 
 
+//on ajoute l'ecouteur chargement de document
+document.addEventListener("DOMContentLoaded", function() {
+  //on selectionnes tt span ont la class=.spoiler
+  var spoilers = document.querySelectorAll(".spoiler");
+  for (var i = 0; i < spoilers.length; i++) {
+    createButton(spoilers[i]);
+  }
 
-
-  var btns= document.querySelectorAll("button .spoiler-button")
-  
-   btns[i].addEventListener("click",function(){
-    console("click")
-    
-   })
-  
-  
 });
+
+
+
+
+var btns= document.querySelectorAll("button .spoiler-button")
+debugger
+for(var i=0;i<btns.length;i++){
+
+ btns[i].addEventListener("click",function(){
+//   console("click")
+console(btns[i])
+
+ })
+
+}
 
