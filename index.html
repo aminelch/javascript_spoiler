@@ -1,0 +1,32 @@
+<html>
+    <meta charset="utf-8">
+    <title>simple spoiler using javascript</title>
+    <style>
+    
+    body{font:16px sans serif; padding:20px;margin-left: 10px;}
+    .spoiler-content{ display:none; }
+    .spoiler-content .visible{
+    display: inline-block;
+    /*opacity: 0.99;*/
+    transition: opacity, 0.3;
+    }
+    .spoiler-button{
+    color:coral;
+    background-color: #c2cec9;
+    text-decoration: none;
+    font: 12px bold "Helvetica",sans serif ;
+    cursor: pointer;
+    }
+    .spoiler{background-color: #D3D7CF;color:black;}
+    </style>
+    <body>
+        <p><b>L</b>orem ipsum dolor sit amet, consectetuer <u>adipiscing</u>
+            elit. <span class="spoiler">eum dolore ducimus.</span>
+            <strong>strong</strong>. Cum sociis <strong>natoque</strong> penatibus
+            et magnis dis parturient montes, nascetur ridiculus
+            mus. <a href="#">Donec quam felis</a> sem. Nulla consequat massa quis
+            enim. Donec pede justo, fringilla vel, <span class="spoiler">aliquet nec</span>,
+            vulputate eget, arcu. <span class="spoiler">In enim justo</span>, rhoncus ut</p>
+            <script src="spoiler.js"></script>
+        </body>
+    </html>
